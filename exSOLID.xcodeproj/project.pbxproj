@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		8D2A4B3729CB297B008B1A1C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2A4B3629CB297B008B1A1C /* main.swift */; };
+		8D2A4B6429CB8138008B1A1C /* SRC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2A4B6329CB8138008B1A1C /* SRC.swift */; };
+		8D2A4B6629CB8C17008B1A1C /* OCP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2A4B6529CB8C17008B1A1C /* OCP.swift */; };
+		8D2A4B6829CBAFDF008B1A1C /* LSP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2A4B6729CBAFDF008B1A1C /* LSP.swift */; };
+		8D2A4B6A29CBBA2B008B1A1C /* ISP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2A4B6929CBBA2B008B1A1C /* ISP.swift */; };
+		8D2A4B6C29CBC008008B1A1C /* DIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2A4B6B29CBC008008B1A1C /* DIP.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,11 @@
 /* Begin PBXFileReference section */
 		8D2A4B3329CB297B008B1A1C /* exSOLID */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = exSOLID; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D2A4B3629CB297B008B1A1C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		8D2A4B6329CB8138008B1A1C /* SRC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRC.swift; sourceTree = "<group>"; };
+		8D2A4B6529CB8C17008B1A1C /* OCP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCP.swift; sourceTree = "<group>"; };
+		8D2A4B6729CBAFDF008B1A1C /* LSP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSP.swift; sourceTree = "<group>"; };
+		8D2A4B6929CBBA2B008B1A1C /* ISP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISP.swift; sourceTree = "<group>"; };
+		8D2A4B6B29CBC008008B1A1C /* DIP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIP.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +68,53 @@
 			isa = PBXGroup;
 			children = (
 				8D2A4B3629CB297B008B1A1C /* main.swift */,
+				8D2A4B3D29CB298C008B1A1C /* Single Resposibility Principle */,
+				8D2A4B3E29CB29BC008B1A1C /* Open Closed Principle */,
+				8D2A4B3F29CB29C2008B1A1C /* Liskov Substitution Principle */,
+				8D2A4B4029CB2A40008B1A1C /* Interface Segregation Principle */,
+				8D2A4B4129CB2A4D008B1A1C /* Dependency Inversion Principle */,
 			);
 			path = exSOLID;
+			sourceTree = "<group>";
+		};
+		8D2A4B3D29CB298C008B1A1C /* Single Resposibility Principle */ = {
+			isa = PBXGroup;
+			children = (
+				8D2A4B6329CB8138008B1A1C /* SRC.swift */,
+			);
+			path = "Single Resposibility Principle";
+			sourceTree = "<group>";
+		};
+		8D2A4B3E29CB29BC008B1A1C /* Open Closed Principle */ = {
+			isa = PBXGroup;
+			children = (
+				8D2A4B6529CB8C17008B1A1C /* OCP.swift */,
+			);
+			path = "Open Closed Principle";
+			sourceTree = "<group>";
+		};
+		8D2A4B3F29CB29C2008B1A1C /* Liskov Substitution Principle */ = {
+			isa = PBXGroup;
+			children = (
+				8D2A4B6729CBAFDF008B1A1C /* LSP.swift */,
+			);
+			path = "Liskov Substitution Principle";
+			sourceTree = "<group>";
+		};
+		8D2A4B4029CB2A40008B1A1C /* Interface Segregation Principle */ = {
+			isa = PBXGroup;
+			children = (
+				8D2A4B6929CBBA2B008B1A1C /* ISP.swift */,
+			);
+			path = "Interface Segregation Principle";
+			sourceTree = "<group>";
+		};
+		8D2A4B4129CB2A4D008B1A1C /* Dependency Inversion Principle */ = {
+			isa = PBXGroup;
+			children = (
+				8D2A4B6B29CBC008008B1A1C /* DIP.swift */,
+			);
+			path = "Dependency Inversion Principle";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,7 +175,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D2A4B6629CB8C17008B1A1C /* OCP.swift in Sources */,
+				8D2A4B6429CB8138008B1A1C /* SRC.swift in Sources */,
 				8D2A4B3729CB297B008B1A1C /* main.swift in Sources */,
+				8D2A4B6C29CBC008008B1A1C /* DIP.swift in Sources */,
+				8D2A4B6A29CBBA2B008B1A1C /* ISP.swift in Sources */,
+				8D2A4B6829CBAFDF008B1A1C /* LSP.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
