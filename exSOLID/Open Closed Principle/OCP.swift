@@ -11,7 +11,12 @@ protocol Downloadable {
     func downLoad()
 }
 
-class Photo: Downloadable {
+protocol Showable {
+    func showMedia()
+}
+
+class Photo: Showable {
+    
     var width: Int
     var height: Int
     
@@ -20,12 +25,31 @@ class Photo: Downloadable {
         self.height = height
     }
     
-    func downLoad() {
+    func showMedia() {
         //реализация
     }
 }
 
-class Video: Downloadable {
+class PhotoDownloader: Photo, Downloadable {
+    
+    override init(width: Int, height: Int) {
+        super.init(width: width, height: height)
+        self.width = width
+        self.height = height
+    }
+    
+    override func showMedia() {
+        //реализация
+    }
+    
+    func downLoad() {
+        //реализация
+    }
+    
+    
+}
+
+class Video: Showable {
     
     var width: Int
     var height: Int
@@ -35,13 +59,38 @@ class Video: Downloadable {
         self.height = height
     }
     
-    func downLoad() {
+    
+    func showMedia() {
         //реализация
     }
 }
+
+class VideoDownloader: Video, Downloadable {
+    
+    override init(width: Int, height: Int) {
+        super.init(width: width, height: height)
+        self.width = width
+        self.height = height
+    }
+    
+    override func showMedia() {
+        //реализация
+    }
+    
+    func downLoad() {
+        //реализация
+    }
+    
+    
+}
+
 
 class Gallery {
     func downLoadFiles(files: Downloadable){
+        //реализация
+    }
+    
+    func showFile(files: Showable){
         //реализация
     }
 }

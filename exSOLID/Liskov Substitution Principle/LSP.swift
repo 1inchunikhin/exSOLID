@@ -1,5 +1,5 @@
 //
-//  LSP.swift
+//  LSP.swift 
 //  exSOLID
 //
 //  Created by Николай Чунихин on 23.03.2023.

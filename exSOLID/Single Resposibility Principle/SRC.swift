@@ -8,9 +8,9 @@
 import Foundation
 
 protocol Song {
-    var name: String {get}
-    var time: Int {get}
-    var melody: String {get}
+    var name: String { get }
+    var time: Int { get }
+    var melody: String { get }
 }
 
 protocol Singer {
@@ -33,3 +33,10 @@ class Studio: Recordable {
     }
     
 }
+
+
+//Признаки наругения
+
+// 1) Затруднение с выбором имени
+// 2) Большое количесвто методов
+// 3) Большое количесвто входящих или исходящих зависимостей
