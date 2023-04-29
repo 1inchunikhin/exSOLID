@@ -7,34 +7,35 @@
 
 import Foundation
 
-protocol Rollable {
-    func roll(dice: Dice)
+
+
+protocol DiceRoller {
+    func rollDice(roll: DiceRoller)
 }
 
-class Dice {
+class Dice: DiceRoller {
     private let faces: Int
     private let color: String
-    private let roller: Rollable
     
-    init(faces: Int, color: String, roller: Rollable) {
+    init(faces: Int, color: String) {
         self.faces = faces
         self.color = color
-        self.roller = roller
+        
     }
     
-    func rollDice() {
-        roller.roll(dice: self)
+    func rollDice(roll: DiceRoller) {
+        
     }
 }
 
-class Backgammon: Rollable {
-    func roll(dice: Dice) {
+class Backgammon: DiceRoller {
+    func rollDice(roll: DiceRoller) {
         //реализация
     }
 }
 
-class BoardGame: Rollable {
-    func roll(dice: Dice) {
+class BoardGame: DiceRoller {
+    func rollDice(roll: DiceRoller) {
         //реализация
     }
 }

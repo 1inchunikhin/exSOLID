@@ -84,13 +84,18 @@ class VideoDownloader: Video, Downloadable {
     
 }
 
+protocol PhotoStorage{
+    func downLoadFiles(file: Downloadable)
+    func showFile(file: Showable)
+}
 
-class Gallery {
-    func downLoadFiles(files: Downloadable){
+class Gallery: PhotoStorage {
+    func downLoadFiles(file: Downloadable) {
         //реализация
     }
     
-    func showFile(files: Showable){
+    func showFile(file: Showable) {
         //реализация
     }
+    
 }
